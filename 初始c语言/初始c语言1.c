@@ -1,0 +1,30 @@
+#include <stdio.h> //std-standard i-input o-output           printf——打印函数      scanf——输入函数
+#include<string.h>
+#define MAX 100//#define定义的标识符常量
+int main () //主函数-程序的入口：有且仅有一个
+{
+   int num1 = 1;//局部变量
+   char _a = 'q';//命名时不可以数字开头
+   3.14;//字面常量
+   const int num2 = 10;//const修饰的常变量（拥有常属性的变量*）
+   int num3 = MAX;
+   extern int a;//extern：声明外部符号的
+   char arr1[] = "abc";//字符串——一串字符
+   char arr2[] = {'a','b','c','\0'};//字符串的结束符——\0
+
+   printf("%s\n",arr1);
+
+   printf("%d\n",strlen(arr2));//strlen()——得到字符串的长度
+
+  printf("%d\n",a);
+
+   printf("%c\n",_a);
+   
+   printf("char所占用的内存空间为%d\n",sizeof(char));//sizeof——显示数据类型所占用的内存空间（单位：byte）1byte=8bit；
+   
+   printf("%d %d %d\n",num1,num2,num3);
+
+   printf("hello world\n");//print funcation 打印函数
+   
+   return 0;//停止命令
+}
