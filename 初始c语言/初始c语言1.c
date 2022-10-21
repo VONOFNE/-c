@@ -1,6 +1,21 @@
 #include <stdio.h> //std-standard i-input o-output           printf——打印函数      scanf——输入函数
 #include<string.h>
 #define MAX 100//#define定义的标识符常量
+
+/*初试函数*/
+int Add(int x,int y){
+      int z = 0;
+      z = x + y;
+      return z;
+   }
+
+
+
+
+
+
+
+
 int main () //主函数-程序的入口：有且仅有一个
 {
    int num1 = 1;//局部变量
@@ -12,6 +27,8 @@ int main () //主函数-程序的入口：有且仅有一个
    char arr1[] = "abc";//字符串——一串字符
    char arr2[] = {'a','b','c','\0'};//字符串的结束符——\0
    int input;
+   int num4 = 0;
+   int num5 = 0;
 
 
    printf("%s\n",arr1);
@@ -29,16 +46,16 @@ int main () //主函数-程序的入口：有且仅有一个
    printf("hello world\n");//print funcation 打印函数
 
 
-/*选择语句*/
+/*选择语句
    printf("你要好好学习吗？（1/0）");
-   scanf("%d",&input);
+   scanf("%d",&input);//&——取地址
    if(input == 1){
       printf("进大厂\n");
    }
    else{
       printf("回家种地\n");
    }
-
+*/
 
 /*循环语句*/
    int line = 0;
@@ -47,8 +64,22 @@ int main () //主函数-程序的入口：有且仅有一个
       line ++;
    }
    if(line == 4){
-      printf("好offer");
+      printf("好offer\n");
    }
+
+
+/*初始数组*/
+   int arr[10] = {1,2,3,4,5,6,7,8,9,10};
+   int i = 0;
+   while(i<10){
+      printf("%d\n",arr[i]);
+      i++;
+   }
+
+/*初试函数*/
+   scanf("%d%d", &num4, &num5);
+   int sum = Add(num4,num5);
+   printf("%d",sum);
 
 
 
