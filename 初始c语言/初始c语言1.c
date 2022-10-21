@@ -33,10 +33,21 @@ int main () //主函数-程序的入口：有且仅有一个
    printf("你要好好学习吗？（1/0）");
    scanf("%d",&input);
    if(input == 1){
-      printf("进大厂");
+      printf("进大厂\n");
    }
    else{
-      printf("回家种地");
+      printf("回家种地\n");
+   }
+
+
+/*循环语句*/
+   int line = 0;
+   while(line<4){
+      printf("敲代码:%d\n",line);
+      line ++;
+   }
+   if(line == 4){
+      printf("好offer");
    }
 
 
