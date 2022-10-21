@@ -11,6 +11,8 @@ int main () //主函数-程序的入口：有且仅有一个
    extern int a;//extern：声明外部符号的
    char arr1[] = "abc";//字符串——一串字符
    char arr2[] = {'a','b','c','\0'};//字符串的结束符——\0
+   int input;
+
 
    printf("%s\n",arr1);
 
@@ -25,6 +27,19 @@ int main () //主函数-程序的入口：有且仅有一个
    printf("%d %d %d\n",num1,num2,num3);
 
    printf("hello world\n");//print funcation 打印函数
-   
+
+
+/*选择语句*/
+   printf("你要好好学习吗？（1/0）");
+   scanf("%d",&input);
+   if(input == 1){
+      printf("进大厂");
+   }
+   else{
+      printf("回家种地");
+   }
+
+
+
    return 0;//停止命令
 }
