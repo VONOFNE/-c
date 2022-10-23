@@ -77,7 +77,7 @@ int main () //主函数-程序的入口：有且仅有一个
 
 /*初识标识符*/
    //0表示假，非0表是真
-   int b  = 10;
+   int b  = 2;
    printf("%d\n",!b);
 
 /*！的用法*/
@@ -100,5 +100,8 @@ int main () //主函数-程序的入口：有且仅有一个
    int sz =  sizeof(arr3) / sizeof(arr3[0]);
    printf("%d\n",sz);
 
+/*移位操作符*/
+   int c = b << 1;//二进制位数向左移动1
+   printf("%d",c);
    return 0;//停止命令
 }
