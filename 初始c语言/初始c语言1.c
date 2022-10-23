@@ -10,12 +10,6 @@ int Add(int x,int y){
    }
 
 
-
-
-
-
-
-
 int main () //主函数-程序的入口：有且仅有一个
 {
    int num1 = 1;//局部变量
@@ -79,9 +73,32 @@ int main () //主函数-程序的入口：有且仅有一个
 /*初试函数*/
    scanf("%d%d", &num4, &num5);
    int sum = Add(num4,num5);
-   printf("%d",sum);
+   printf("%d\n",sum);
 
+/*初识标识符*/
+   //0表示假，非0表是真
+   int b  = 10;
+   printf("%d\n",!b);
 
+/*！的用法*/
+   if(b){
+      //b为真，行动
+   }
+
+   if(!b){
+      //b为假，行动
+   }
+
+/*重新认识sizeof*/
+//sizeof是一个操作符
+//不是函数
+//计算类型和变量的大小的
+//计算数组大小
+   int arr3[10] = { 0 };
+   printf("%d\n",sizeof(arr3));
+   printf("%d\n",sizeof(arr3[0]));
+   int sz =  sizeof(arr3) / sizeof(arr3[0]);
+   printf("%d\n",sz);
 
    return 0;//停止命令
 }
