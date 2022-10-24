@@ -21,8 +21,7 @@ int main () //主函数-程序的入口：有且仅有一个
    char arr1[] = "abc";//字符串——一串字符
    char arr2[] = {'a','b','c','\0'};//字符串的结束符——\0
    int input;
-   int num4 = 0;
-   int num5 = 0;
+   int num4,num5;
 
 
    printf("%s\n",arr1);
@@ -55,7 +54,7 @@ int main () //主函数-程序的入口：有且仅有一个
    int line = 0;
    while(line<4){
       printf("敲代码:%d\n",line);
-      line ++;
+      line++;
    }
    if(line == 4){
       printf("好offer\n");
@@ -67,7 +66,7 @@ int main () //主函数-程序的入口：有且仅有一个
    int i = 0;
    while(i<10){
       printf("%d\n",arr[i]);
-      i++;
+      i++;//先使用，后++
    }
 
 /*初试函数*/
@@ -102,6 +101,17 @@ int main () //主函数-程序的入口：有且仅有一个
 
 /*移位操作符*/
    int c = b << 1;//二进制位数向左移动1
-   printf("%d",c);
+   printf("%d\n",c);
+
+/*按位取反*/
+   int d = 0;
+   printf("%d\n",~d);//~对一个数的二进制按位取反
+
+/*++前后*/
+   int e = ++d;//先++，后使用
+
+   printf("%d\n",e);
+   printf("%d\n",d);
+
    return 0;//停止命令
 }
