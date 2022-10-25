@@ -1,6 +1,6 @@
 #include <stdio.h> //std-standard i-input o-output           printf——打印函数      scanf——输入函数
-#include<string.h>
-#define MAX 100//#define定义的标识符常量
+#include<string.h>//include——预处理指令
+#define MAX 100//#define定义的标识符常量     define——预处理指令
 
 /*初试函数*/
 int Add(int x,int y){
@@ -112,6 +112,11 @@ int main () //主函数-程序的入口：有且仅有一个
 
    printf("%d\n",e);
    printf("%d\n",d);
+
+/*常见关键字*/
+/*auto break case char const continue default do double else enum extern 
+float for goto if int long register return short signed sizeof static 
+struct switch typedef union unsigned void volatile while*/
 
    return 0;//停止命令
 }
