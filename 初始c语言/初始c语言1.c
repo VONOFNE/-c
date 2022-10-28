@@ -1,5 +1,5 @@
 #include <stdio.h> //std-standard i-input o-output           printf——打印函数      scanf——输入函数
-#include<string.h>//include——预处理指令
+#include<string.h>//include——预处理指令——预编译期间处理的指令
 #define MAX 100//#define定义的标识符常量     define——预处理指令
 
 /*初试函数*/
@@ -8,6 +8,16 @@ int Add(int x,int y){
       z = x + y;
       return z;
    }
+
+
+
+/*结构体*/
+struct Stu
+{
+   char name[20];
+   int age;
+   double score;
+};
 
 
 int main () //主函数-程序的入口：有且仅有一个
@@ -117,6 +127,18 @@ int main () //主函数-程序的入口：有且仅有一个
 /*auto break case char const continue default do double else enum extern 
 float for goto if int long register return short signed sizeof static 
 struct switch typedef union unsigned void volatile while*/
+
+//static 修饰
+
+
+/*初识指针，结构体*/
+   struct Stu s = {"张三",20, 85.5};//结构体的创建和初始化
+   printf ("1:%s %d %lf\n", s.name,s.age,s. score);//结构体变量.成员变量
+
+   struct Stu * ps = &s;
+   printf("2:%s %d %lf\n",(*ps).name,(*ps).age,(*ps).score);//（指针变量）.成员变量
+
+   printf("3:%s %d %lf\n",ps->name,ps->age,ps->score);//结构体指针->成员变量名
 
    return 0;//停止命令
 }
